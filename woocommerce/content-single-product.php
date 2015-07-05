@@ -48,6 +48,9 @@ global $product;
 		<ul class="masonry-grid">
 			<li class="grid-sizer"></li>
             <?php
+	            $xx = get_field('product_variation_image');
+	            //var_dump($xx);
+	            echo sizeof($xx);
 			if (get_field('product_variation_image')) {
 				while( has_sub_field("product_variation_image") ) {
 					$variation_img = get_sub_field('variation_image'); 
