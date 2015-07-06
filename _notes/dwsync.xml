@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
 <file name="archive.php" server="50.31.114.98//public_html/" local="130797419600699973" remote="130799009400000000" Dst="0" />
-<file name="footer.php" server="50.31.114.98//public_html/" local="130797398663690052" remote="130799010000000000" Dst="0" />
-<file name="front-page.php" server="50.31.114.98//public_html/" local="130797416000697794" remote="130799010000000000" Dst="0" />
-<file name="functions.php" server="50.31.114.98//public_html/" local="130799365960789639" remote="130799010000000000" Dst="0" />
-<file name="header.php" server="50.31.114.98//public_html/" local="130799179136878944" remote="130799010000000000" Dst="0" />
+<file name="footer.php" server="50.31.114.98//public_html/" local="130797398663690052" remote="130806270600000000" Dst="0" />
+<file name="front-page.php" server="50.31.114.98//public_html/" local="130806093753212497" remote="130806270600000000" Dst="0" />
+<file name="functions.php" server="50.31.114.98//public_html/" local="130805968765299878" remote="130806270600000000" Dst="0" />
+<file name="header.php" server="50.31.114.98//public_html/" local="130799179136878944" remote="130806270600000000" Dst="0" />
 <file name="screenshot.png" server="50.31.114.98//public_html/" local="130784941363076693" remote="130795990800000000" Dst="0" />
-<file name="style.css" server="50.31.114.98//public_html/" local="130797828641574593" remote="130799010000000000" Dst="0" />
+<file name="style.css" server="50.31.114.98//public_html/" local="130805968765989914" remote="130806271200000000" Dst="0" />
 <file name="style.css" server="C:/Users/theab/Documents/Websites/www.mmaterial.dev/" local="130786688435239522" remote="130786688430000000" Dst="0" />
 <file name="archive.php" server="C:/Users/theab/Documents/Websites/www.mmaterial.dev/" local="130786109262065420" remote="130786109260000000" Dst="0" />
 <file name="header.php" server="C:/Users/theab/Documents/Websites/www.mmaterial.dev/" local="130786104474626624" remote="130786104470000000" Dst="0" />
@@ -14,6 +14,7 @@
 <file name="footer.php" server="C:/Users/theab/Documents/Websites/www.mmaterial.dev/" local="130786691221205716" remote="130786691220000000" Dst="0" />
 <file name="functions.php" server="C:/Users/theab/Documents/Websites/www.mmaterial.dev/" local="130786685017571364" remote="130786685010000000" Dst="0" />
 <file name="screenshot.png" server="C:/Users/theab/Documents/Websites/www.mmaterial.dev/" local="130784941363076693" remote="130784941360000000" Dst="0" />
-<file name="style - Copy.css" server="50.31.114.98//public_html/" local="130786688435239522" remote="130799010000000000" Dst="0" />
-<file name="page.php" server="50.31.114.98//public_html/" local="130796954530003241" remote="130799010000000000" Dst="0" />
+<file name="page.php" server="50.31.114.98//public_html/" local="130796954530003241" remote="130806270600000000" Dst="0" />
+<file name=".gitattributes" server="50.31.114.98//public_html/" local="130634386487196491" remote="130806267000000000" Dst="0" />
+<file name=".gitignore" server="50.31.114.98//public_html/" local="130802873379399222" remote="130806267000000000" Dst="0" />
 </dwsync>

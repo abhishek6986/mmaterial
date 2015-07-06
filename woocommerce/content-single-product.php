@@ -47,17 +47,18 @@ global $product;
 	<div class="content-module med-full-w med-stretch">
 		<ul class="masonry-grid">
 			<li class="grid-sizer"></li>
-            <?php
-	            $xx = get_field('product_variation_image');
-	            //var_dump($xx);
-	            echo sizeof($xx);
+			<?php
+	            $counting = count(get_field('product_variation_image'));
+				if ( ($counting % 2 )== 0 ) { $define_width = "half-w"; } else { $define_width = "full-w"; }
+	            
 			if (get_field('product_variation_image')) {
 				while( has_sub_field("product_variation_image") ) {
 					$variation_img = get_sub_field('variation_image'); 
 					$variation_info = get_sub_field('variation_short_info');  ?>
-			<li class="item slide-in  half-w expander">
+			<li class="item slide-in <?php echo $define_width; ?> expander">
 				<div class="grid-module">
-					<img src="<?php echo $variation_img; ?>" alt="">
+					<!--<img src="<?php echo $variation_img; ?>" width="870" alt="">-->
+                    <?php echo wp_get_attachment_image( $variation_img, 'thumbnail' ); ?>
 					<div class="img-tint hover-tint"></div>
 					<div class="more"></div>
 					<div class="more"></div>

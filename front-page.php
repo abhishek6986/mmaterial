@@ -54,9 +54,11 @@ if( get_field('homepage_block_content') )
 			$page_object = get_sub_field('home_page_block');
 			$post_thumbnail_id = get_post_thumbnail_id( $page_object->ID );
 			$image = wp_get_attachment_image_src( $post_thumbnail_id );
+			
+			$block_background = get_sub_field('block_background');
 			?>
 			<li class="item half-w slide-in">
-                <a href="<?php echo get_permalink( $page_object->ID ); ?>" class="grid-module <?php if (empty($image)) { echo "solid"; } ?>">
+                <a href="<?php echo get_permalink( $page_object->ID ); ?>" class="grid-module <?php if (empty($image)) {  echo "solid"; } ?>" <?php if (!empty($block_background)) { echo 'style="background-color:'.$block_background.'"'; } ?>>
                     <?php if (!empty($image)) {  ?><img alt="" src="<?php echo $image[0]; ?>"> <?php } ?>
                     <div class="img-tint hover-tint"></div>
                     <div class="text-overlay u-centered">
