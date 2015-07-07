@@ -546,7 +546,7 @@ table {
 }
 
 .u-cf,.clear {
-	*zoom:1
+	zoom:1
 }
 
 .u-cf:before,.u-cf:after,.clear:before,.clear:after {
@@ -896,7 +896,7 @@ ol.decimal {
 
 .infinite-grid {
 	margin:66px -30px 80px;
-	*zoom:1
+	zoom:1
 }
 
 .infinite-grid:before,.infinite-grid:after {
@@ -1124,7 +1124,7 @@ th,td {
 .row {
 	max-width:100%;
 	margin:0 auto;
-	*zoom:1
+	zoom:1
 }
 
 .row:before,.row:after {
@@ -2102,7 +2102,7 @@ th,td {
 .finishes-droppables {
 	clear:both;
 	padding:0 5px;
-	*zoom:1
+	zoom:1
 }
 
 .finishes-droppables:before,.finishes-droppables:after {
@@ -2383,7 +2383,7 @@ th,td {
 
 ul.products {
 	margin:66px -30px 0;
-	*zoom:1
+	zoom:1
 }
 
 ul.products:before,ul.products:after {
@@ -2446,7 +2446,7 @@ ul.products .product-name {
 	-webkit-backface-visibility:hidden
 }
 
-.term-objects ul.products li,.term-furniture ul.products li,.term-collaborations ul.products li {
+.tax-product_cat ul.products li {
 	width:50%
 }
 
@@ -2774,7 +2774,7 @@ ul.related-products .product-name {
 	margin:0 0 30px;
 	line-height:1.2;
 	font-size:.90909rem;
-	*zoom:1
+	zoom:1
 }
 
 .cart-item .variation:before,.cart-item .variation:after {
@@ -2808,7 +2808,7 @@ ul.related-products .product-name {
 	width:100%;
 	line-height:1.2;
 	font-size:1.09091rem;
-	*zoom:1
+	zoom:1
 }
 
 .item-totals:before,.item-totals:after {
@@ -3246,7 +3246,7 @@ form.checkout h2 {
 		opacity:1
 	}
 	
-	.term-lighting ul.products li {
+	.tax-product_cat ul.products li {
 		width:50%
 	}
 	

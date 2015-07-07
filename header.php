@@ -119,7 +119,7 @@
 			?>
 		<div class="hero hero-home hero-static" data-img-src="<?php echo implode(',',$slide_images); ?>">
 			<div class="inner">
-				<div class="site-title"><img src="<?php echo get_stylesheet_directory_uri() .'/images/logo-home.svg'; ?>" alt="<?php bloginfo( 'name' );?>" data-src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></div>
+				<div class="site-title"><img src="<?php echo get_stylesheet_directory_uri() .'/images/logo-home.png'; ?>" alt="<?php bloginfo( 'name' );?>" data-src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></div>
 			</div>
 		</div>
 		<div class="l-content-wrap fade-on-load">

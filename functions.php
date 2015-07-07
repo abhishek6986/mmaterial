@@ -58,7 +58,7 @@ function mmaterial_scripts_and_styles() {
   global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
 
   if (!is_admin()) {
-
+  		wp_dequeue_style('storefront-style');
 		// register
 		wp_register_style( 'mmaterial-stylesheet', get_stylesheet_directory_uri() . '/style.css', array(), '', 'all' );
 
