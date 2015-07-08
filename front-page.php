@@ -29,7 +29,7 @@ if( get_field('homepage_block_content') )
 			$cat_ID = get_sub_field('product_category_block');
 			
 			$thumbnail_id = get_woocommerce_term_meta( $cat_ID, 'thumbnail_id', true ); 
-			$image = wp_get_attachment_url( $thumbnail_id ); 
+			$image = wp_get_attachment_image_src( $thumbnail_id, 'shop_catalog' ); 
 			
 			$get_category_object = get_term($cat_ID, 'product_cat');
 			$name=$get_category_object->name;
@@ -39,7 +39,7 @@ if( get_field('homepage_block_content') )
 			?>
 			<li class="item half-w slide-in">
                 <a href="<?php echo $term_link; ?>" class="grid-module">
-                    <img alt="" src="<?php echo $image; ?>">
+                    <img alt="" src="<?php echo $image[0]; ?>">
                     <div class="img-tint hover-tint"></div>
                     <div class="text-overlay u-centered">
                         <h2><?php echo $name; ?></h2> <p><?php echo $description; ?></p>
