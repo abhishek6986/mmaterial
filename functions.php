@@ -47,6 +47,10 @@ remove_action( 'woocommerce_after_single_product_summary',			'woocommerce_output
 remove_action( 'woocommerce_after_single_product_summary',			'woocommerce_upsell_display',			15 );
 
 
+// Display 24 products per page. Goes in functions.php
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 50;' ), 20 );
+
+
 add_action( 'wp_enqueue_scripts', 'mmaterial_scripts_and_styles', 999 );
 
 
@@ -118,7 +122,7 @@ function acf_set_featured_image( $value, $post_id, $field  ){
 }
 
 // acf/update_value/name={$field_name} - filter for a specific field based on it's name
-add_filter('acf/update_value/name=hero_image', 'acf_set_featured_image', 10, 3);
+add_filter('acf/update_value/name=catalog_image', 'acf_set_featured_image', 10, 3);
  
 
 	

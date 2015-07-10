@@ -1319,7 +1319,8 @@ th,td {
 .hero-title h1 {
 	margin:0;
 	color:#fff;
-	font-size:7.27273rem
+	font-size:7.27273rem;
+	text-shadow: 1px 1px 3px #000
 }
 
 .hero-parallax {

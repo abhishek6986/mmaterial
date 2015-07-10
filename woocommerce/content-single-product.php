@@ -41,7 +41,7 @@ global $product;
 			<a href="#product-info" class="button-solid u-full-w"><span>Product </span>Information</a>
 		</div>
 		<div class="col-3 sm-full-w">
-			<a href="<?php get_field('tear_sheet'); ?>" class="button-solid u-full-w">Tearsheets</a>
+			<?php echo do_shortcode("[readoffline]"); ?>
 		</div>
 	</div>
 	<div class="content-module med-full-w med-stretch">
@@ -49,7 +49,7 @@ global $product;
 			<li class="grid-sizer"></li>
 			<?php
 	            $counting = count(get_field('product_variation_image'));
-				if ( ($counting % 2 )== 0 ) { $define_width = "half-w"; } else { $define_width = "full-w"; }
+				if ( ($counting % 2 )== 0 ) { $define_width = "half-w"; $image_size = "thumbnail"; } else { $define_width = "full-w"; $image_size = "shop_catalog"; }
 	            
 			if (get_field('product_variation_image')) {
 				while( has_sub_field("product_variation_image") ) {
@@ -58,7 +58,7 @@ global $product;
 			<li class="item slide-in <?php echo $define_width; ?> expander">
 				<div class="grid-module">
 					<!--<img src="<?php echo $variation_img; ?>" width="870" alt="">-->
-                    <?php echo wp_get_attachment_image( $variation_img, 'thumbnail' ); ?>
+                    <?php echo wp_get_attachment_image( $variation_img,  $image_size ); ?>
 					<div class="img-tint hover-tint"></div>
 					<div class="more"></div>
 					<div class="more"></div>

@@ -42,7 +42,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	$classes[] = 'last';
 }
 ?>
-<li class="slide-in">
+<li class="slide-in item">
 
 	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 

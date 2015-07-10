@@ -26,7 +26,7 @@ if ( empty( $woocommerce_loop['columns'] ) )
 // Increase loop count
 $woocommerce_loop['loop']++;
 ?>
-<li class="slide-in">
+<li class="slide-in item">
 
 	<?php do_action( 'woocommerce_before_subcategory', $category ); ?>
 
