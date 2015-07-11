@@ -124,6 +124,12 @@
 		</div>
 		<div class="l-content-wrap fade-on-load">
 		<?php }
+			else if (is_page_template('archive-press.php') )  
+			
+				{ ?>
+		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></a> </div>
+		<div class="fade-wrapper fade-in">
+		<?php }
 			else if (is_tax())  
 			
 				{ ?>
