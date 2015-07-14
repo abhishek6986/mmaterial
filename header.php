@@ -119,7 +119,7 @@
 			?>
 		<div class="hero hero-home hero-static" data-img-src="<?php echo implode(',',$slide_images); ?>">
 			<div class="inner">
-				<div class="site-title"><img src="<?php echo get_stylesheet_directory_uri() .'/images/logo-home.png'; ?>" alt="<?php bloginfo( 'name' );?>" data-src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></div>
+				<div class="site-title"><img src="<?php echo get_stylesheet_directory_uri() .'/images/logo-home.png'; ?>" alt="<?php bloginfo( 'name' );?>" data-src="<?php echo get_stylesheet_directory_uri() .'/images/logo.png'; ?>"></div>
 			</div>
 		</div>
 		<div class="l-content-wrap fade-on-load">
@@ -127,13 +127,13 @@
 			else if (is_page_template('archive-press.php') )  
 			
 				{ ?>
-		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></a> </div>
+		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.png'; ?>"></a> </div>
 		<div class="fade-wrapper fade-in">
 		<?php }
 			else if (is_tax())  
 			
 				{ ?>
-		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></a> </div>
+		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.png'; ?>"></a> </div>
 		<div class="fade-on-load">
 		<?php }
 			else if (is_single())  
@@ -150,12 +150,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="logo logo-overlay fade-on-load"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></a> </div>
+		<div class="logo logo-overlay fade-on-load"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.png'; ?>"></a> </div>
 		<div class="l-content-wrap fade-on-load">
 		<?php }
 			else  
 			
 				{ ?>
-		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.svg'; ?>"></a> </div>
+		<div class="logo fade-in"> <a href="<?php bloginfo('url'); ?>"><img alt="<?php bloginfo('name'); ?>" src="<?php echo get_stylesheet_directory_uri() .'/images/logo.png'; ?>"></a> </div>
 		<div class="l-content-wrap fade-on-load">
 		<?php } ?>

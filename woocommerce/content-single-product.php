@@ -15,6 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 ?>
 
+
+
 <?php
 	/**
 	 * woocommerce_before_single_product hook
@@ -41,7 +43,7 @@ global $product;
 			<a href="#product-info" class="button-solid u-full-w"><span>Product </span>Information</a>
 		</div>
 		<div class="col-3 sm-full-w">
-			<?php echo do_shortcode("[readoffline]"); ?>
+			<a href="<?php get_bloginfo('url'); ?>/tearsheet.pdf" class="button-solid u-full-w">Tearsheets</a>
 		</div>
 	</div>
 	<div class="content-module med-full-w med-stretch">
