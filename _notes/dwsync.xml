@@ -3,7 +3,7 @@
 <file name="archive.php" server="50.31.114.98//public_html/" local="130797419600699973" remote="130807332600000000" Dst="0" />
 <file name="footer.php" server="50.31.114.98//public_html/" local="130797398663690052" remote="130807333200000000" Dst="0" />
 <file name="front-page.php" server="50.31.114.98//public_html/" local="130806093753212497" remote="130807333200000000" Dst="0" />
-<file name="functions.php" server="50.31.114.98//public_html/" local="130807641678083829" remote="130807333200000000" Dst="0" />
+<file name="functions.php" server="50.31.114.98//public_html/" local="130814286370085163" remote="130813908000000000" Dst="0" />
 <file name="header.php" server="50.31.114.98//public_html/" local="130807641348185903" remote="130807333200000000" Dst="0" />
 <file name="screenshot.png" server="50.31.114.98//public_html/" local="130784941363076693" remote="130795990800000000" Dst="0" />
 <file name="style.css" server="50.31.114.98//public_html/" local="130807641348305910" remote="130807333800000000" Dst="0" />
@@ -17,4 +17,5 @@
 <file name="page.php" server="50.31.114.98//public_html/" local="130796954530003241" remote="130807333800000000" Dst="0" />
 <file name=".gitattributes" server="50.31.114.98//public_html/" local="130634386487196491" remote="130807332600000000" Dst="0" />
 <file name=".gitignore" server="50.31.114.98//public_html/" local="130806828666197936" remote="130807332600000000" Dst="0" />
+<file name="tearsheet.php" server="50.31.114.98//public_html/" local="130814288978891639" remote="130813912200000000" Dst="0" />
 </dwsync>

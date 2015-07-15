@@ -15,8 +15,6 @@ add_action( 'after_setup_theme', 'remove_parent_theme_features', 10 );
  
 function remove_parent_theme_features() {
 	
-//require get_stylesheet_directory() . '/inc/init.php';
-
 
 
 
@@ -443,19 +441,10 @@ if(!function_exists('ecpt_format_date')) {
 
 // generating tearsheet
 
-function tearsheet($build_html) 
-{
+add_action( 'woocommerce_before_single_product', 'woocommerce_generate_pdf', 5 );
 
-$html = file_get_contents($build_html);
-
-include("mpdf60/mpdf.php");
-
-$mpdf=new mPDF('c'); 
-
-$mpdf->WriteHTML($html);
-
-$mpdf->Output('tearsheet.pdf','F');
-
-
-
+function woocommerce_generate_pdf() {
+	if( is_product() ) {
+		include("tearsheet.php");	
+	}
 }

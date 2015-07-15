@@ -43,7 +43,7 @@ global $product;
 			<a href="#product-info" class="button-solid u-full-w"><span>Product </span>Information</a>
 		</div>
 		<div class="col-3 sm-full-w">
-			<a href="<?php get_bloginfo('url'); ?>/tearsheet.pdf" class="button-solid u-full-w">Tearsheets</a>
+			<a href="<?php echo get_bloginfo('url'); ?>/MMATERIAL-Tearsheet-<?php echo get_the_ID(); ?>.pdf" class="button-solid u-full-w">Tearsheets</a>
 		</div>
 	</div>
 	<div class="content-module med-full-w med-stretch">

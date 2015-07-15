@@ -1,6 +1,4 @@
 <?php
-global $product, $woocommerce_loop;
-echo "ID - ".$id =$product->ID;
 
 ob_start();
 ?>
@@ -9,7 +7,7 @@ ob_start();
 <table width="595px" height="842px">
 <tbody>
 <tr>
-<td style="height:100%; vertical-align:central; text-align:center;"><img alt="MMATERIAL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg"></td>
+<td style="height:100%; vertical-align:central; text-align:center;"><img width="500px" alt="MMATERIAL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg"></td>
 </tr>
 </tbody>
 </table>
@@ -17,17 +15,19 @@ ob_start();
 
 <div id="page2">
 <?php
-$counting = count(get_field('product_variation_image', $id));
+$counting = count(get_field('product_variation_image'));
 if ( ($counting % 2 )== 0 ) {  
 
 		$image_size = "thumbnail"; 
-		if (get_field('product_variation_image',$id)) {
-			$i = 1;
-			while( has_sub_field("product_variation_image",$id) ) {
-				$variation_img_.$i = get_sub_field('variation_image',$id); 
-				$variation_info_.$i = get_sub_field('variation_short_info',$id);  
-				$i++;
+		if (get_field('product_variation_image')) {
+			$x=1;
+			while( has_sub_field("product_variation_image") ) {
+				$variation_img = get_sub_field('variation_image'); 
+				$variation_info = get_sub_field('variation_short_info');  
+				$image[$x] = wp_get_attachment_image( $variation_img,  array(150,150) );
+				$x=$x+1;
 			}
+			
 		} ?>
     
         <table width="595px" height="842px" border="0" cellspacing="0">
@@ -36,11 +36,11 @@ if ( ($counting % 2 )== 0 ) {
             	<td><?php the_title(); ?></td>
             </tr>
             <tr>
-              <td rowspan="2" scope="col" width="400px"><img width="400" src="<?php the_field('hero_image',$id); ?>" alt="" /></td>
-              <td scope="col" width="150px"><img width="150" src="<?php echo wp_get_attachment_image( $variation_img_1,  $image_size ); ?>" alt="" /></td>
+              <td rowspan="2" scope="col" width="400px"><img width="400" src="<?php the_field('hero_image'); ?>" alt="" /></td>
+              <td scope="col" width="150px"><?php echo $image[1]; ?></td>
             </tr>
             <tr>
-              <td width="150px"><img width="150" src="<?php echo wp_get_attachment_image( $variation_img_1,  $image_size ); ?>" alt="" /></td>
+              <td width="150px"><?php echo $image[2]; ?></td>
             </tr>
           </tbody>
         </table>
@@ -48,8 +48,9 @@ if ( ($counting % 2 )== 0 ) {
 } 
 else { 
 		$image_size = "shop_catalog"; 
-		$variation_img = get_sub_field('variation_image',$id); 
-		$variation_info = get_sub_field('variation_short_info',$id);				
+		$variation_img = get_sub_field('variation_image'); 
+		$variation_info = get_sub_field('variation_short_info');		
+		$image = wp_get_attachment_image( $variation_img_2,  array(150,150) );		
 		?>
         
         <table width="595px" height="842px" border="0" cellspacing="0">
@@ -58,10 +59,10 @@ else {
             	<td><?php the_title(); ?></td>
             </tr>
             <tr>
-              <td width="550px"><img width="550" src="<?php the_field('hero_image',$id); ?>" alt="" /></td>
+              <td width="550px"><img width="550" src="<?php the_field('hero_image'); ?>" alt="" /></td>
             </tr>
             <tr>
-              <td width="550px"><img width="550" src="<?php echo wp_get_attachment_image( $variation_img,  $image_size ); ?>" alt="" /></td>
+              <td width="550px"><?php echo $image; ?></td>
             </tr>
           </tbody>
         </table>
@@ -93,9 +94,16 @@ Flushing NY 11385<br/>
 <?php
 
 $content_new_all =  ob_get_contents();
+
 ob_end_clean();
-//var_dump($content_new_all);
- file_put_contents( 'tearsheet-template.html', $content_new_all );
+
+
+include("mpdf60/mpdf.php");
+
+$mpdf=new mPDF('c');  
+
+$mpdf->WriteHTML($content_new_all);
+
+$mpdf->Output('MMATERIAL-Tearsheet-'.get_the_ID().'.pdf','F');
 
 ?>
-
