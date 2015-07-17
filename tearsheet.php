@@ -97,6 +97,15 @@ $content_new_all =  ob_get_contents();
 
 ob_end_clean();
 
+//$build_html = get_stylesheet_directory().'/tearsheets/'.get_the_ID().'.html';
+
+
+//file_put_contents( $build_html , $content_new_all );
+
+//tearsheet($build_html);
+
+
+//$html = file_get_contents($build_html);
 
 include("mpdf60/mpdf.php");
 
