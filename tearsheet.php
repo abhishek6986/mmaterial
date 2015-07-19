@@ -7,18 +7,11 @@ ob_start();
 <table width="595px" height="842px">
 <tbody>
 <tr>
-<<<<<<< Updated upstream
-<td style="height:100%; vertical-align:central; text-align:center;"><img width="500px" alt="MMATERIAL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg"></td>
-</tr>
-</tbody>
-</table>
-=======
 <td style="height:100%; vertical-align:central; text-align:center;"><img width="500px" alt="MMATERIAL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-pdf.svg"></td>
 </tr>
 </tbody>
 </table>
 <pagebreak />
->>>>>>> Stashed changes
 </div>
 
 <div id="page2">
@@ -77,11 +70,7 @@ else {
 <?php		
 } ?>
 	
-<<<<<<< Updated upstream
-
-=======
 <pagebreak />
->>>>>>> Stashed changes
 </div>
 
 <div id="page3">
