@@ -2,12 +2,22 @@
 
 ob_start();
 ?>
-<div id="mmaterial_pdf" class="<?php the_title(); ?>">
+<style>
+	h1 { text-transform: uppercase; font-size: medium;}
+	table {
+		width: 595px;
+		height: 842px;
+		border: none;
+		align-content: center;
+	}
+</style>
+
+<div id="mmaterial_pdf">
 <div id="page1">
-<table width="595px" height="842px">
+<table>
 <tbody>
 <tr>
-<td style="height:100%; vertical-align:central; text-align:center;"><img width="500px" alt="MMATERIAL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-pdf.svg"></td>
+<td align="center" valign="middle"><img width="500px" alt="MMATERIAL" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-tearsheet.svg"></td>
 </tr>
 </tbody>
 </table>
@@ -31,10 +41,10 @@ if ( ($counting % 2 )== 0 ) {
 			
 		} ?>
     
-        <table width="595px" height="842px" border="0" cellspacing="0">
+        <table>
           <tbody>
           	<tr>
-            	<td><?php the_title(); ?></td>
+            	<td align="center"><h1><?php the_title(); ?></h1></td>
             </tr>
             <tr>
               <td rowspan="2" scope="col" width="400px"><img width="400" src="<?php the_field('hero_image'); ?>" alt="" /></td>
@@ -54,10 +64,10 @@ else {
 		$image = wp_get_attachment_image( $variation_img_2,  array(150,150) );		
 		?>
         
-        <table width="595px" height="842px" border="0" cellspacing="0">
+        <table>
           <tbody>
           	<tr>
-            	<td><?php the_title(); ?></td>
+            	<td align="center"><h1><?php the_title(); ?></h1></td>
             </tr>
             <tr>
               <td width="550px"><img width="550" src="<?php the_field('hero_image'); ?>" alt="" /></td>
@@ -74,17 +84,16 @@ else {
 </div>
 
 <div id="page3">
-<table width="595px" height="842px">
+<table>
 <tbody>
 <tr>
-<td style="height:100%; vertical-align:bottom; text-align:center;">
+<td valign="bottom" align="center">
 <h2>M Materials</h2>
 <p>46-55 Metropolitan Avenue<br/>
 Suite 102<br/>
 Flushing NY 11385<br/>
 (By Appointment Only)</p>
-<br/>
-<p>General Enquiries<br/><br/></p>
+<p>General Enquiries<br/></p>
 <a hre="mailto:info@m-material.com" >info@m-material.com</a>
 </td>
 </tr>
@@ -92,16 +101,17 @@ Flushing NY 11385<br/>
 </table>
 </div>
 </div>
+
 <?php
 
 $content_new_all =  ob_get_contents();
 
 ob_end_clean();
 
-//$build_html = get_stylesheet_directory().'/tearsheets/'.get_the_ID().'.html';
+$build_html = get_stylesheet_directory().'/'.get_the_ID().'.html';
 
 
-//file_put_contents( $build_html , $content_new_all );
+file_put_contents( $build_html , $content_new_all );
 
 //tearsheet($build_html);
 
