@@ -74,13 +74,8 @@
 						<div class="social"> <a href="http://www.facebook.com/APPARATUSSTUDIO" target="_blank">Facebook</a> <a href="http://instagram.com/APPARATUSSTUDIO" target="_blank">Instagram</a> </div>
 					</div>
 					<div class="subscribe">
-						<form class="subscribe-form" action="https://collapsible.createsend.com/t/r/s/jhttdji/" method="post" id="subForm">
-							<label for="cm-jhttdji-jhttdji">Subscribe</label>
-							<div class="field-wrap">
-								<input type="email" placeholder="EMAIL ADDRESS" required name="cm-jhttdji-jhttdji" id="jhttdji-jhttdji">
-								<button type="submit">Submit</button>
-							</div>
-						</form>
+						<?php if ( function_exists("gravity_form") ) { gravity_form( 1, false, false, false, '', true ); } ?>
+						
 					</div>
 				</div>
 			</div>
@@ -89,7 +84,7 @@
 			<div class="sidebar-scroller">
 				<div class="sidebar-inner">
 					<h2>Contact</h2>
-					<a class="button-solid" href="/studio/">Visit the studio</a>
+					<br/>
 					<h3>M Materials</h3>
 					<p>46-55 Metropolitan Avenue<br/>
 						Suite 102<br/>

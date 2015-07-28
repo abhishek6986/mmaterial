@@ -1329,7 +1329,6 @@ th,td {
 	margin:0;
 	color:#fff;
 	font-size:7.27273rem;
-	text-shadow: 1px 1px 3px #000
 }
 
 .hero-parallax {
@@ -1478,11 +1477,11 @@ th,td {
 	padding-top:0
 }
 
-.subscribe .field-wrap {
+.subscribe .gform_wrapper {
 	position:relative
 }
 
-.subscribe button {
+.subscribe .gform_footer .gform_button {
 	position:absolute;
 	right:0;
 	top:0;
@@ -1495,7 +1494,7 @@ th,td {
 	background:none
 }
 
-.subscribe button:before {
+.subscribe .gform_footer .gform_button:before {
 	content:'';
 	display:block;
 	position:absolute;
@@ -1510,11 +1509,11 @@ th,td {
 	transition:border-color .13s linear
 }
 
-.subscribe button:hover:before {
+.subscribe .gform_footer .gform_button:hover:before {
 	border-color:transparent transparent transparent gray
 }
 
-.subscribe input[type="email"] {
+.subscribe input[type="text"] {
 	margin-bottom:0;
 	padding-right:30px
 }
@@ -3993,4 +3992,13 @@ select {
 	h2,h3 {
 		page-break-after:avoid
 	}
+}
+
+
+/* GF Customization */
+.gform_body .gfield_label { display: none; }
+.gform_body .gfield_error input[type="text"] { border: 2px solid red; }
+.validation_error {
+    color: #fff;
+    font-size: x-small;
 }
